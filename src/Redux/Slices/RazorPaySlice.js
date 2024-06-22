@@ -4,7 +4,7 @@ import toast from "react-hot-toast";
 import axiosInstance from "../../Helpers/axiosInstance";
 
 const initialState = {
-    key: "",
+    key: "rzp_test_y595riQBCfFEvo",
     Ysubscription_id: "",
     Msubscription_id: "",
     isPaymentVerified: false,

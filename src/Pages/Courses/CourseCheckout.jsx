@@ -30,9 +30,10 @@ function CourseCheckout() {
     async function handleSubscriptionY(e) {
         e.preventDefault();
         
+        console.log(razorpayKey,Ysubscription_id)
 
         if (!razorpayKey || !Ysubscription_id) {
-            toast.error("Something went wrong");
+            toast.error("key not generated");
             return;
         }
 
@@ -92,7 +93,7 @@ function CourseCheckout() {
 
     // Load RazorPay Key
     async function load() {
-        await dispatch(getRazorPayId());
+        // await dispatch(getRazorPayId());
         await dispatch(purchaseCourseBundleM());
         await dispatch(purchaseCourseBundleY());
     }
